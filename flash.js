@@ -2,6 +2,7 @@
 const { spawn } = require('child_process')
 const fs = require('fs')
 const leftPad = require('left-pad')
+const path = require('path')
 
 const program = require('commander')
 program.parse(process.argv)
@@ -20,10 +21,12 @@ if (message != null) {
 		const binaryList = leftPad(binaryString, 8, '0').split('')
 		bits = [ ...bits, ...binaryList ]
 	})
-
+	const cmdLoc = path.join(__dirname, './setleds')
+	console.log(cmdLoc)
 	const flash = b => {
 		const s = b == 0 ? '-' : '+'
-		spawn('./setleds', [ `${s}caps` ])
+
+		spawn(cmdLoc, [ `${s}caps` ])
 	}
 
 	bits.forEach((b, i) => {

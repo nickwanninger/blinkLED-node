@@ -1,5 +1,5 @@
 {
-	"name": "release",
+	"name": "flashled",
 	"version": "1.0.0",
 	"description": "",
 	"main": "flash.js",
