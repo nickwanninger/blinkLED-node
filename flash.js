@@ -22,7 +22,6 @@ if (message != null) {
 		bits = [ ...bits, ...binaryList ]
 	})
 	const cmdLoc = path.join(__dirname, './setleds')
-	console.log(cmdLoc)
 	const flash = b => {
 		const s = b == 0 ? '-' : '+'
 
