@@ -1,15 +1,19 @@
 {
-  "name": "release",
-  "version": "1.0.0",
-  "description": "",
-  "main": "flash.js",
-  "dependencies": {
-    "left-pad": "^1.1.3"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+	"name": "release",
+	"version": "1.0.0",
+	"description": "",
+	"main": "flash.js",
+	"bin": {
+		"flashled": "./flash.js"
+	},
+	"dependencies": {
+		"commander": "^2.11.0",
+		"left-pad": "^1.1.3"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC"
 }
